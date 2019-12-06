@@ -11,6 +11,7 @@ const Footer = () => {
 const FooterStyle = {
     position: "fixed",
     bottom: "0px",
+    left: "0px",
     width: "100%",
     backgroundColor:"lightgray",
     color:"black",
