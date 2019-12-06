@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Sample extends Component{
+class Page1 extends Component{
     render(){
         return (
         <div style={{padding: "3rem 1rem"}}>
@@ -23,4 +23,4 @@ class Sample extends Component{
     }
 }
 
-export default Sample;
+export default Page1;
