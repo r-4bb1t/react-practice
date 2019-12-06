@@ -13,12 +13,13 @@ const Header = () => {
                     <NavLink to="Page2" className="aLink" activeClassName="activeLink">PAGE2</NavLink>
                 </span>
             </span>
-            <div style={{height: "3px", background: "linear-gradient(to right, palevioletred, mediumpurple)"}}/>
+            <div style={{height: "2px", background: "linear-gradient(to right, palevioletred, mediumpurple)"}}/>
         </div>
     );
 };
 
 const HeaderStyle = {
+    fontFamily: 'nanumsquare',
     position: "fixed",
     top: "0px",
     width: "100%",

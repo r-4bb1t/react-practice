@@ -1,11 +1,11 @@
 .aLink {
     text-decoration: none;
     padding: 0px 1rem;
-    color: palevioletred;
+    color: black;
 }
 
 .activeLink {
     text-decoration: none;
     padding: 0px 1rem;
-    color: mediumpurple;
+    color: palevioletred;
 }

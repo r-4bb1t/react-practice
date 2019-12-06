@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Home, Page1, Page2 } from '../pages';
+import './App.css';
 
 
 class App extends Component {
