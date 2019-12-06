@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import { Header } from '../components/Header'
-import { Main } from '../pages';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import { Home, Page1 } from '../pages';
 
 
 class App extends Component {
     render() {
         return (
             <div>
+                <Header/>
                 <div>
-                    <Header/>
+                    <Route exact path="/Home" component={Home}/>
+                    <Route exact path="/Page1" component={Page1}/>
                 </div>
-                <div>
-                    <Route exact path="/" component={Main}/>
-                </div>
+                <Footer/>
             </div>
         );
     }
