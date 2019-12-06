@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Page.css'
 
 class Home extends Component{
     componentDidMount(prevProps) {
@@ -9,20 +10,22 @@ class Home extends Component{
     }
     render(){
         return (
-        <div style={{padding: "7rem 1rem", fontFamily: 'nanumsquare'}}>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
-            <h1>홈</h1>
+        <div class="Page Home">
+            <div>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+                <h1>홈</h1>
+            </div>
         </div>
         )
     }

@@ -13,7 +13,7 @@ const FooterStyle = {
     bottom: "0px",
     left: "0px",
     width: "100%",
-    backgroundColor:"lightgray",
+    backgroundColor:"white",
     color:"black",
     textAlign:"center",
     fontSize:"0.8rem",
