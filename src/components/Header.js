@@ -33,7 +33,7 @@ const HeaderContentStyle = {
     width: "100%",
     flexDirection: "row",
     alignItems: "center",
-    padding: "0.1rem 5rem"
+    padding: "0.3rem 5rem"
 }
 
 const LogoStyle = {
