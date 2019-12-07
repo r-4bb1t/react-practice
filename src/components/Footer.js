@@ -17,7 +17,8 @@ const FooterStyle = {
     color:"black",
     textAlign:"center",
     fontSize:"0.8rem",
-    padding: "0.2rem"
+    padding: "0.2rem",
+    boxShadow: "0 -5px 5px rgba(0,0,0,0.12), 0 -1px 2px rgba(0,0,0,0.24)"
 }
 
 export default Footer;
