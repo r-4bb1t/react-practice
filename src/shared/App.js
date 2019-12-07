@@ -5,11 +5,10 @@ import Footer from '../components/Footer';
 import { Home, Page1, Page2 } from '../pages';
 import './App.css';
 
-
 class App extends Component {
     render() {
         return (
-            <div class="App">
+            <div className="App">
                 <Header/>
                 <div>
                     <Route exact path="/" component={Home}/>

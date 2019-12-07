@@ -1,33 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
+    const { y } = useScroll();
     return (
-        <div className="header" style={HeaderStyle}>
-            <span style={HeaderContentStyle}>
-                <div style={LogoStyle}>Danettlog</div>
-                <div style={LinkStyle}>
-                    <NavLink to="Home" className="aLink" activeClassName="activeLink">HOME</NavLink>
-                    <NavLink to="Page1" className="aLink" activeClassName="activeLink">PAGE1</NavLink>
-                    <NavLink to="Page2" className="aLink" activeClassName="activeLink">PAGE2</NavLink>
-                </div>
-            </span>
-            <div style={{height: "2px", background: "linear-gradient(to right, palevioletred, mediumpurple)"}}/>
+        <div style={{position: "fixed", top: y < 200 ? "0px" : "200" - y + "px", width: "100%"}}>
+            <div className="header">
+                <span style={HeaderContentStyle}>
+                    <div style={LogoStyle}>SamplePage</div>
+                    <div style={LinkStyle}>
+                        <NavLink to="Home" className="aLink" activeClassName="activeLink">HOME</NavLink>
+                        <NavLink to="Page1" className="aLink" activeClassName="activeLink">PAGE1</NavLink>
+                        <NavLink to="Page2" className="aLink" activeClassName="activeLink">PAGE2</NavLink>
+                    </div>
+                </span>
+                <div style={{height: "2px", background: "linear-gradient(to right, palevioletred, mediumpurple)"}}/>
+            </div>
         </div>
     );
 };
 
-const HeaderStyle = {
-    fontFamily: 'nanumsquare',
-    position: "fixed",
-    top: "0px",
-    left: "0px",
-    width: "100%",
-    backgroundColor: "rgba(255, 255, 255, 1)",
-    color: "black",
-    boxShadow: "0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)"
-}
+const useScroll = () => {
+    const [state, setState] = useState({
+        x: 0,
+        y: 0
+    });
+    const onScroll = () => {
+        setState({ y: window.scrollY});
+        console.log(window.scrollY);
+    };
+    useEffect(() => {
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+    return state;
+};
 
 const HeaderContentStyle = {
     width: "100%",

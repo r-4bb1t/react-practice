@@ -2,6 +2,7 @@
     padding: 7rem 1rem;
     font-family: 'nanumsquare';
     background: linear-gradient(to bottom, palevioletred, mediumpurple);
+    text-align: center;
 } ::-webkit-scrollbar { 
     display: none; 
 }

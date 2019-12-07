@@ -10,8 +10,8 @@ class Home extends Component{
     }
     render(){
         return (
-        <div class="Page Home">
-            <div style={{textAlign:"center"}}>
+        <div className="Page Home">
+            <div>
                 <h1>이</h1>
                 <h1>제</h1>
                 <h1>여</h1>

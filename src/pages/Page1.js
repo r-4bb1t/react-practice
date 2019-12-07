@@ -10,7 +10,7 @@ class Page1 extends Component{
     }
     render(){
         return (
-            <div class="Page Page1">
+            <div className="Page Page1">
                 <div>
                     <h1>샘플</h1>
                     <h1>샘플</h1>
