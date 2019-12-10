@@ -11,7 +11,7 @@ import Cookies from 'universal-cookie';
 class App extends Component {
     render() {
         const cookies = new Cookies();
-        if (cookies.get('checkPopup') == null) cookies.set('checkPopup', true, { path: '/' });
+        if (cookies.get('checkPopup') == null) cookies.set('checkPopup', true, { path: '/', maxAge: '86400'});
         return (
             <div className="App">
                 <Header/>
