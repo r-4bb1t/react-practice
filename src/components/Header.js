@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
-    const { y } = useScroll();
+    useScroll();
     return (
-        <div style={{position: "fixed", top: y < 200 ? "0px" : "200" - y + "px", width: "100%"}}>
+        <div style={{position: "fixed", top: "0px", opacity : (200 - window.scrollY) / 2 + "%", width: "100%"}}>
             <div className="header">
                 <span style={HeaderContentStyle}>
                     <div style={LogoStyle}>SamplePage</div>
@@ -24,11 +24,10 @@ const Header = () => {
 const useScroll = () => {
     const [state, setState] = useState({
         x: 0,
-        y: 0
+        y: 100
     });
     const onScroll = () => {
-        setState({ y: window.scrollY});
-        console.log(window.scrollY);
+        setState({ y: window.scrollY });
     };
     useEffect(() => {
         window.addEventListener("scroll", onScroll);
