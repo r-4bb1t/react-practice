@@ -5,7 +5,7 @@ import './Header.css'
 const Header = () => {
     useScroll();
     return (
-        <div style={{position: "fixed", top: "0px", opacity : (200 - window.scrollY) / 2 + "%", width: "100%"}}>
+        <div style={{zIndex: "10", position: "fixed", left:"0px", top: "0px", opacity : (200 - window.scrollY) / 2 + "%", width: "100%"}}>
             <div className="header">
                 <span style={HeaderContentStyle}>
                     <div style={LogoStyle}>SamplePage</div>

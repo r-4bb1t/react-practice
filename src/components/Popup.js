@@ -59,6 +59,7 @@ const PopupBackground = {
     fontFamily: "nanumsquare",
     boxShadow: "0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
     textAlign: "center",
+    zIndex: "10"
 }
 
 const ButtonContainer = {

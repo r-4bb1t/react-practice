@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 import Popup from '../components/Popup';
 import { Home, Page1, Page2 } from '../pages';
 import './App.css';
-import { instanceOf } from 'prop-types';
 import Cookies from 'universal-cookie';
 
 class App extends Component {

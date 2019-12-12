@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import './Page.css'
+import './Page.css';
+import mainImg from '../assets/img/main.jpg';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 
 class Home extends Component{
     componentDidMount(prevProps) {
@@ -12,19 +15,40 @@ class Home extends Component{
         return (
             <div className="Page Home">
                 <div>
-                    <h1>이</h1>
-                    <h1>제</h1>
-                    <h1>여</h1>
-                    <h1>기</h1>
-                    <h1>다</h1>
-                    <h1>가</h1>
-                    <h1>뭘</h1>
-                    <h1>해</h1>
-                    <h1>야</h1>
-                    <h1>좋</h1>
-                    <h1>을</h1>
-                    <h1>까</h1>
-                    <h1>요</h1>
+                    <AwesomeSlider bullets={false}>
+                        <div data-src={mainImg} />
+                        <div data-src={mainImg} />
+                        <div data-src={mainImg} />
+                    </AwesomeSlider>
+                </div>
+                <div style={{height:"200px"}}></div>
+                <div>
+                    <br/>
+                    <br/>
+                    <h1 style={{fontWeight:"800", fontSize:"5.0rem", lineHeight:"0%"}}>Title</h1>
+                    <h2 style={{fontWeight:"300", fontSize:"2.0rem"}}>subtitle</h2>
+                    <h1>C</h1>
+                    <h1>o</h1>
+                    <h1>n</h1>
+                    <h1>t</h1>
+                    <h1>e</h1>
+                    <h1>n</h1>
+                    <h1>t</h1>
+                    <br/>
+                </div>
+                <div style={{background:"linear-gradient(to bottom, palevioletred, mediumpurple)", color:"white"}}>
+                    <br/>
+                    <br/>
+                    <h1 style={{fontWeight:"800", fontSize:"5.0rem", lineHeight:"0%"}}>Title</h1>
+                    <h2 style={{fontWeight:"300", fontSize:"2.0rem"}}>subtitle</h2>
+                    <h1>C</h1>
+                    <h1>o</h1>
+                    <h1>n</h1>
+                    <h1>t</h1>
+                    <h1>e</h1>
+                    <h1>n</h1>
+                    <h1>t</h1>
+                    <br/>
                 </div>
             </div>
         )
