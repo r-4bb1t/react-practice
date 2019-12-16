@@ -5,7 +5,7 @@ import './Header.css'
 const Header = () => {
     useScroll();
     return (
-        <div style={{zIndex: "10", position: "fixed", left:"0px", top: "0px", opacity : (200 - window.scrollY) / 2 + "%", width: "100%"}}>
+        <div style={{zIndex: "100", position: "fixed", left:"0px", top: Math.min(Math.max(-55, - window.scrollY / 3), 0) + "px", width: "100%"}}>
             <div className="header">
                 <span style={HeaderContentStyle}>
                     <div style={LogoStyle}>SamplePage</div>
@@ -20,6 +20,8 @@ const Header = () => {
         </div>
     );
 };
+
+//opacity : (200 - window.scrollY) / 2 + "%"
 
 const useScroll = () => {
     const [state, setState] = useState({
@@ -51,7 +53,7 @@ const LogoStyle = {
 }
 
 const LinkStyle = {
-    marginTop: "1.0rem",
+    marginTop: "1.2rem",
     fontSize: "1.3rem",
     fontWeight:"400",
 }

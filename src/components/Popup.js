@@ -20,8 +20,6 @@ const Popup = () => {
             isChecked: !state.isChecked,
         });
     }
-    console.log("cookie " + cookies.get('checkPopup') + " " + typeof cookies.get('checkPopup'));
-    console.log("state " + state.isOpened + " " + typeof state.isOpened);
     if (state.isOpened) {
         return (
             <div style={PopupBackground}>

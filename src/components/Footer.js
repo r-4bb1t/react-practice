@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link} from 'react-router-dom';
 import Modal from './Modal';
 import Logo1 from '../assets/img/logo_facebook.png'
 import Logo2 from '../assets/img/logo_instagram.png'
@@ -22,17 +21,18 @@ const Footer = () => {
         <div>
             <Modal isOpened={state.isModalOpened} close={closeModal}></Modal>
             <div className="footer" style={FooterStyle}>
-                <table style={{width:"60%", margin:"auto"}}>
+                <table style={{width:"60%", margin:"auto"}}><tbody>
                     <tr style={{textAlign:"center"}}>
-                        <td colspan="3">
-                            <Link to = "facebook.com">
+                        <td colSpan="3">
+                            <a href={"http://www.facebook.com"}>
                                 <img src = {Logo1} style={{width: "30px", margin:"10px 10px"}}/>
-                            </Link>
-                            <Link to = "instagram.com">
+                            </a>
+                            <a href = {"http://www.instagram.com"}>
                                 <img src = {Logo2} style={{width: "30px", margin:"10px 10px"}}/>
-                            </Link>
+                            </a>
                         </td>
                     </tr>
+                    <br/>
                     <tr>
                         <td>
                             서울시 양천구 목동남로 n길 nnn, nnn-nnnn<br/>
@@ -43,14 +43,18 @@ const Footer = () => {
                             Email. a@example.com<br/>
                         </td>
                         <td style={{color:"gray"}}>|</td>
-                        <td>
+                        <td style={{textAlign:"right"}}>
+                            대표자명 홍길동<br/>
+                            사업자등록번호 000-00-00000<br/>
+                            <br/>
                             <button style={Button} onClick={ButtonClick}>사이트 이용약관</button>
                         </td>
                     </tr>
+                    <br/>
                     <tr>
-                        <td colspan="3" style={{color:"gray", textAlign:"center"}}>© Copyright 2019 d4n3tt. All Rights Reserved.</td>
+                        <td colSpan="3" style={{color:"gray", textAlign:"center"}}>© Copyright 2019 d4n3tt. All Rights Reserved.</td>
                     </tr>
-                </table>
+                </tbody></table>
             </div>
         </div>
     );
@@ -70,11 +74,11 @@ const FooterStyle = {
 }
 
 const Button = {
-    padding: "0% 5%",
     textDecoration: "none",
     background: "white",
     border: "0",
     color:"black",
+    textAlign: "left"
 }
 
 export default Footer;
