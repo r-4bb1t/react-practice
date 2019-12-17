@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 const BoxComponent = ({img, title, content}) => {
     return (
         <div style={Container}>
-            <br/><br/>
-            <img src = {img} style={{width:"70px", marginBottom:"40px"}}></img>
-            <h1 style={{margin:"-20px"}}>{title}</h1>
+            <br/>
+            <img src = {img} style={{width:"70px", marginBottom:"20px"}}></img>
+            <h1 style={{margin:"-10px"}}>{title}</h1>
             <p>{content}</p>
         </div>
     )

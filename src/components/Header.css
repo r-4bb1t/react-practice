@@ -1,7 +1,6 @@
 .aLink {
     text-decoration: none;
     padding: 0px 1rem;
-    color: black;
 }
 
 .activeLink {
@@ -14,7 +13,6 @@
     font-family: 'nanumsquare';
     left: 0px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 1);
     color: black;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
 }

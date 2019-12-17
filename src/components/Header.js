@@ -5,22 +5,24 @@ import './Header.css'
 const Header = () => {
     useScroll();
     return (
-        <div style={{zIndex: "100", position: "fixed", left:"0px", top: Math.min(Math.max(-55, - window.scrollY / 3), 0) + "px", width: "100%"}}>
+        <div style={{zIndex: "100", position: "fixed", left:"0px", background: "rgba(255, 255, 255, " + (window.scrollY - 100) / 100 + ")",
+            top: Math.min(Math.max(-70, - window.scrollY / 3), 0) + "px",
+            boxShadow: (window.scrollY > 100) ? "0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)" : "none", width: "100%"}}>
             <div className="header">
                 <span style={HeaderContentStyle}>
                     <div style={LogoStyle}>SamplePage</div>
-                    <div style={LinkStyle}>
-                        <NavLink to="Home" className="aLink" activeClassName="activeLink">HOME</NavLink>
-                        <NavLink to="Page1" className="aLink" activeClassName="activeLink">PAGE1</NavLink>
-                        <NavLink to="Page2" className="aLink" activeClassName="activeLink">PAGE2</NavLink>
+                    <div style={{marginTop: "1.2rem", fontSize: "1.3rem", fontWeight:"400"}} >
+                        <NavLink to="Home" className="aLink" activeClassName="activeLink" style={{color: (window.scrollY > 100) ? "black" : "white"}}>HOME</NavLink>
+                        <NavLink to="Page1" className="aLink" activeClassName="activeLink" style={{color: (window.scrollY > 100) ? "black" : "white"}}>PAGE1</NavLink>
+                        <NavLink to="Page2" className="aLink" activeClassName="activeLink" style={{color: (window.scrollY > 100) ? "black" : "white"}}>PAGE2</NavLink>
                     </div>
                 </span>
-                <div style={{height: "2px", background: "linear-gradient(to right, palevioletred, mediumpurple)"}}/>
             </div>
         </div>
     );
 };
 
+//<div style={{height: "2px", background: "linear-gradient(to right, palevioletred, mediumpurple)"}}/>
 //opacity : (200 - window.scrollY) / 2 + "%"
 
 const useScroll = () => {
@@ -40,9 +42,8 @@ const useScroll = () => {
 
 const HeaderContentStyle = {
     width: "100%",
-    flexDirection: "row",
     textAlign: "center",
-    padding: "0.3rem 5rem"
+    padding: "0.1rem 5rem"
 }
 
 const LogoStyle = {
@@ -51,11 +52,4 @@ const LogoStyle = {
     fontWeight:"700",
     color: "palevioletred"
 }
-
-const LinkStyle = {
-    marginTop: "1.2rem",
-    fontSize: "1.3rem",
-    fontWeight:"400",
-}
-
 export default Header;

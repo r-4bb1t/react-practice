@@ -15,7 +15,7 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 <Popup/>
-                <div>
+                <div className="router">
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/Home" component={Home}/>
                     <Route exact path="/Page1" component={Page1}/>
