@@ -1,8 +1,8 @@
 .Page {
-    padding: 7rem 0rem;
+    padding: 0rem 0rem;
     font-family: 'nanumsquare';
-    background: linear-gradient(to bottom, palevioletred, mediumpurple);
     text-align: center;
+    background: white;
 }::-webkit-scrollbar { 
     display: none; 
 }

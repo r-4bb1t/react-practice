@@ -10,8 +10,10 @@ const Header = () => {
             boxShadow: (window.scrollY > 100) ? "0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)" : "none", width: "100%"}}>
             <div className="header">
                 <span style={HeaderContentStyle}>
-                    <div style={LogoStyle}>SamplePage</div>
-                    <div style={{marginTop: "1.2rem", fontSize: "1.3rem", fontWeight:"400"}} >
+                    <div style={LogoStyle}>
+                        <NavLink to="Home" style={{textDecoration: "none", color: "white"}}>SamplePage</NavLink>
+                    </div>
+                    <div style={{marginTop: "1.2rem", fontSize: "1.3rem", fontWeight:"300"}} >
                         <NavLink to="Home" className="aLink" activeClassName="activeLink" style={{color: (window.scrollY > 100) ? "black" : "white"}}>HOME</NavLink>
                         <NavLink to="Page1" className="aLink" activeClassName="activeLink" style={{color: (window.scrollY > 100) ? "black" : "white"}}>PAGE1</NavLink>
                         <NavLink to="Page2" className="aLink" activeClassName="activeLink" style={{color: (window.scrollY > 100) ? "black" : "white"}}>PAGE2</NavLink>
@@ -50,6 +52,5 @@ const LogoStyle = {
     fontFamily: 'nanumsquare',
     fontSize: "2.0rem",
     fontWeight:"700",
-    color: "palevioletred"
 }
 export default Header;

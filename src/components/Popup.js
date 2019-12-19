@@ -23,14 +23,15 @@ const Popup = () => {
     if (state.isOpened) {
         return (
             <div style={PopupBackground}>
-                <h1>공지사항</h1>
-                <p>집에 가기 싫다!</p>
-                <p>집에 가기 싫다!</p>
-                <p>집에 가기 싫다!</p>
-                <p>집에 가기 싫다!</p>
-                <p>집에 가기 싫다!</p>
-                <p>집에 가기 싫다!</p>
-                <p>집에 가기 싫다!</p>
+                <div style={{margin : "20px"}}>
+                    <h1>Title</h1>
+                    <p>Content</p>
+                    <p>Content</p>
+                    <p>Content</p>
+                    <p>Content</p>
+                    <p>Content</p>
+                    <p>Content</p>
+                </div>
                 <div style={{position: "absolute", bottom: "10%", textAlign: "center", width: "100%"}}>
                     <input type="checkbox" checked={state.isChecked} onChange={handleChange}/>
                     <span style={{fontSize:"0.5rem"}}>하루동안 보지 않기</span>
@@ -48,16 +49,16 @@ const Popup = () => {
 }
 
 const PopupBackground = {
-    position: "fixed",
-    top: "20%",
-    left: "10%",
+    position: "absolute",
+    top: "30%",
+    left: "15%",
     width: "250px",
     height: "400px",
-    background: "gainsboro",
+    background: "rgba(220, 220, 220)",
     fontFamily: "nanumsquare",
     boxShadow: "0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
     textAlign: "center",
-    zIndex: "10"
+    zIndex: "50"
 }
 
 const ButtonContainer = {

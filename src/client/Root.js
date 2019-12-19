@@ -3,7 +3,7 @@ import { HashRouter } from 'react-router-dom';
 import App from '../shared/App';
 
 const Root = () => (
-    <HashRouter basename="/react-practice">
+    <HashRouter basename="/">
         <App/>
     </HashRouter>
 );
