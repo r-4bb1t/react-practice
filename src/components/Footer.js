@@ -34,7 +34,7 @@ const Footer = () => {
                     </tr>
                     <br/>
                     <tr>
-                        <td>
+                        <td style={{fontSize:"0.7rem"}}>
                             서울시 양천구 목동남로 n길 nnn, nnn-nnnn<br/>
                             nnn-nnnn, nnn, Mokdongnam-ro, Yangcheon-gu, Seoul, Republic of Korea<br/>
                             <br/>
@@ -42,8 +42,8 @@ const Footer = () => {
                             Fax. 02-0000-0000<br/>
                             Email. a@example.com<br/>
                         </td>
-                        <td style={{color:"gray"}}>|</td>
-                        <td style={{textAlign:"right"}}>
+                        <td style={{color:"gray", fontSize:"1.5rem"}}>|</td>
+                        <td style={{textAlign:"right", fontSize:"0.7rem"}}>
                             대표자명 홍길동<br/>
                             사업자등록번호 000-00-00000<br/>
                             <br/>

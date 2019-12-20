@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Page.css'
 import BoxComponent from '../components/BoxComponent';
 import Img1 from '../assets/img/logo_instagram.png';
+import { MDBAnimation } from "mdbreact";
 
 class Page2 extends Component {
     componentDidMount(prevProps) {
@@ -13,8 +14,10 @@ class Page2 extends Component {
     render() {
         return (
             <div className="Page Page2">
-                <div style={{height:"400px",backgroundColor:"gray", textAlign:"center"}}>
-                    <h1 style={{lineHeight:"400px"}}>PAGE2</h1>
+                <div style={{height:"500px",backgroundColor:"gray", textAlign:"center"}}>
+                <MDBAnimation type="bounceIn">
+                        <h1 style={{lineHeight:"500px"}}>PAGE2</h1>
+                    </MDBAnimation>
                 </div>
                 <div style={{height:"200px"}}></div>
                 <div>

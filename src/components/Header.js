@@ -49,7 +49,6 @@ const HeaderContentStyle = {
 }
 
 const LogoStyle = {
-    fontFamily: 'nanumsquare',
     fontSize: "2.0rem",
     fontWeight:"700",
 }

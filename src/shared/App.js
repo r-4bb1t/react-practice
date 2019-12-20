@@ -7,6 +7,9 @@ import Popup from '../components/Popup';
 import { Home, Page1, Page2 } from '../pages';
 import './App.css';
 import Cookies from 'universal-cookie';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 
 class App extends Component {
     render() {
